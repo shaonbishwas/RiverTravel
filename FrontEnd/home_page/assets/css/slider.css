@@ -1,0 +1,106 @@
+.slider-container {
+    position: relative;
+    /* max-width: 600px; */
+    margin: 0 auto;
+  }
+
+  .slider {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    /* height: 200px; */
+    /* height: 50vh; */
+    height: auto;
+    min-height: 100vh;
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+  }
+
+  /* .prevBtn,
+  .nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  } */
+  .prevBtn
+  .nextBtn {
+    position: relative !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    /* background: rgba(0, 0, 0, 0.5); */
+    /* background-color: #ddd; */
+    /* color: white; */
+    /* color: black; */
+    padding: 10px 15px !important;
+    border: none !important;
+    cursor: pointer !important;
+    z-index: 2 !important;
+  }
+
+  .prevBtn {
+    left: 0 !important;
+  }
+
+  .nextBtn {
+    right: 0 !important;
+  }
+
+  .dots-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  /* ============================================================== */
+
+  .active_slider {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .slider_button{
+    justify-content: center;
+    margin-top: 25px !important;
+}
+.slider_button button {
+    border-radius: 50%;
+    height: auto;
+}
+.slider_icons{
+    font-size: 20px !important;
+}
+.slider_btn_dark{
+    background-color: #5C5C5C !important;
+    color: white !important;
+}
+
+.slider_btn_light{
+    background-color: #EFF3FA !important;
+    color: #1A202C !important;
+}

@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fd4d75259d.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Contact Us</title>
     <style>
       body {
         font-family: Arial, sans-serif;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+        /* height: 100vh; */
         margin: 0;
       }
 
@@ -18,7 +23,11 @@
         text-align: center;
         margin-bottom: 25px;
       }
-
+      .contactDiv {
+        align-self: center;
+        /* height: 60vh; */
+        margin-top: 200px;
+      }
       input[type="text"],
       input[type="email"],
       textarea {
@@ -54,10 +63,198 @@
         justify-content: center;
         align-items: center;
       }
+      #navbar {
+        position: fixed;
+        top: 0;
+        height: 90px;
+        width: 100%;
+        background-color: rgba(0, 46, 79, 0.2);
+      }
+      #navbar1 {
+        width: 1440px;
+        height: 90px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+      }
+      #navbar1 > ul {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+      }
+      #navbar1 > ul > li {
+        height: 30px;
+        width: auto;
+        display: inline;
+      }
+      .links {
+        text-decoration: none;
+        list-style-type: none;
+      }
+      #firstlist {
+        color: white;
+        /* font-family: "Source Sans 3"; */
+        font-size: 36px;
+        font-weight: 600;
+        margin: 17px 0px 5px 50px;
+        justify-content: center;
+      }
+      #secondlist {
+        color: white;
+        /* font-family: "Source Sans 3"; */
+        font-weight: 400;
+        font-size: 16px;
+        margin: 35px 0px 5px 5px;
+      }
+      #thirdlist {
+        color: white;
+        /* font-family: "Source Sans 3"; */
+        font-weight: 400;
+        font-size: 16px;
+        margin: 35px 0px 5px 0px;
+      }
+      #fourthlist {
+        color: white;
+        /* font-family: "Source Sans 3"; */
+        font-weight: 400;
+        font-size: 16px;
+        margin: 35px 0px 5px 0px;
+      }
+      #fifthlist {
+        color: white;
+        /* font-family: "Source Sans 3"; */
+        font-weight: 400;
+        font-size: 16px;
+        margin: 35px 0px 5px 0px;
+      }
+      #sixthlist {
+        color: white;
+        /* font-family: "Source Sans 3"; */
+        font-weight: 400;
+        font-size: 16px;
+        margin: 35px 0px 5px 0px;
+      }
+      #seventhlist {
+        color: white;
+        /* font-family: "Source Sans 3"; */
+        font-weight: 400;
+        font-size: 16px;
+        margin: 35px 0px 5px 0px;
+      }
+      #eighthlist {
+        margin: 15px 0px 5px 100px;
+      }
+      #button1 {
+        background-color: rgba(0, 46, 79, 0.1);
+        /* font-family: "Source Sans 3"; */
+        font-weight: 400;
+        color: white;
+        font-size: 25px;
+        width: 202px;
+        height: 58px;
+        margin-right: 50px;
+        border: 1px solid white;
+        border-radius: 5px;
+      }
+
+      #secondlist:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      #thirdlist:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      #fourthlist:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      #fifthlist:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      #button1:hover {
+        cursor: pointer;
+        color: black;
+        background-color: white;
+      }
+      footer {
+        /* height: 351px; */
+        background-color: #353636;
+      }
+      footer > div {
+        max-width: 1400px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+      }
+      footer > div h1 {
+        /* font-family: "Source Sans 3"; */
+        font-size: 36px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        padding-top: 70px;
+      }
+      footer > div p {
+        text-align: center;
+        color: white;
+        /* font-family: "Source Sans 3"; */
+        font-size: 20px;
+      }
+      footer > div hr {
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+      #footer {
+        display: flex;
+        height: 50px;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+      }
+      .footer_link {
+        text-decoration: none;
+        color: white;
+      }
+      #footer_link {
+        display: flex;
+        height: 50px;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        color: white;
+      }
     </style>
   </head>
   <body>
-    <div>
+    <div id="navbar">
+      <nav id="navbar1">
+        <ul>
+          <li id="firstlist">Travel & Tourism</li>
+          <a href="" class="links">
+            <li id="secondlist">Home</li>
+          </a>
+          <a href="" class="links">
+            <li id="thirdlist">Blogs</li>
+          </a>
+          <a href="../pages/about.html" class="links">
+            <li id="fourthlist">About Us</li>
+          </a>
+          <a href="../pages/our_tours.html" class="links">
+            <li id="fifthlist">Our Tours</li>
+          </a>
+          <a href="../pages/travelStory.html" class="links">
+            <li id="sixthlist">Travel Story</li>
+          </a>
+          <a href="../pages/contact.html" class="links">
+            <li id="seventhlist">Contact us</li>
+          </a>
+          <a href="../pages/register.html" class="links">
+            <li id="eighthlist"><button id="button1">Register Now</button></li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+    <div class="contactDiv">
       <h2>Contact With Us</h2>
       <div class="input_container">
         <input
@@ -90,5 +287,56 @@
         <h6>+88 01750 14 14 14</h6>
       </div>
     </div>
+    <footer>
+      <div>
+        <h1>Travel & Tourism</h1>
+        <p>
+          Fickle Flight is your one-stop travel portal. We offer hassle free
+          flight and hotel bookings. We also have all your <br />
+          flight needs in you online shop.
+        </p>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <div id="footer">
+          <div>
+            <p class="footer_para"><a class="footer_link" href="">Home</a></p>
+          </div>
+          <div>
+            <p class="footer_para">
+              <a class="footer_link" href="">About us</a>
+            </p>
+          </div>
+          <div>
+            <p class="footer_para">
+              <a class="footer_link" href="">Contact us</a>
+            </p>
+          </div>
+        </div>
+        <div id="footer_link">
+          <div>
+            <a class="footer_link" href=""
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+          <div>
+            <a class="footer_link" href=""
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+          <div>
+            <a class="footer_link" href=""
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div>
+            <a class="footer_link" href=""
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

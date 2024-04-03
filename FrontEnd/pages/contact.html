@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 14px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      button {
+        padding: 15px;
+        border-radius: 10px;
+        border: none;
+        background-color: #f7a582;
+        color: white;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+      }
+      .input_container {
+        display: flex;
+        gap: 14px;
+      }
+      .location_container {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Contact With Us</h2>
+      <div class="input_container">
+        <input
+          placeholder="Enter your first name"
+          type="text"
+          id="first"
+          name="first"
+          required
+        />
+
+        <input
+          placeholder="Enter your email"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+      </div>
+
+      <textarea
+        name=""
+        id=""
+        cols="40"
+        rows="5"
+        placeholder="Your message"
+      ></textarea>
+      <button type="submit">Send Massages</button>
+      <div class="location_container">
+        <h6>Dhanmondi, Dhaka, Bangladesh</h6>
+        <h6>+88 01750 14 14 14</h6>
+      </div>
+    </div>
+  </body>
+</html>

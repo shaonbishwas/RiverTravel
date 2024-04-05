@@ -1,7 +1,10 @@
+
+//Banner_section_slider_starts_here
+
 let list = document.querySelector('.slider .list');
 let items = document.querySelectorAll('.slider .list .item');
 let dots = document.querySelectorAll('.slider .dots li');
-let previous = document.getElementById('previous')
+let prev = document.getElementById('prev')
 let next = document.getElementById('next')
 
 let active = 0;
@@ -16,7 +19,7 @@ next.onclick = function(){
     reloadSlider();
 }
 
-previous.onclick = function(){
+prev.onclick = function(){
     if (active - 1 < 0){
         active = lengthItems;
     } else{
@@ -43,8 +46,10 @@ dots.forEach ((li, key) => {
         reloadSlider();
     })
 })
+//banner_section_slider_ends_here
 
 
+//feature_section_slider_starts_here
 const slider = document.querySelector('.slider_div');
 
 const leftArrow = document.querySelector('.left_button');
@@ -61,7 +66,9 @@ rightArrow.addEventListener('click', function(){
   sectionIndex = (sectionIndex < 2)? sectionIndex + 1 : 2;
   slider.style.transform ='translate(' + (sectionIndex) * -33.33 + '%)';
 })
+//feature_section_slider_ends_here
 
+//faq_section_dropdown_starts_here
 
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
@@ -144,3 +151,26 @@ toggle between hiding and showing the dropdown content */
       }
     }
   }
+//faq_section_dropdown_ends_here
+
+
+//review_section_sider_starts_here
+
+const slider_Review = document.querySelector('.slider_div_review');
+
+const leftArrowReview = document.querySelector('.left_button_review');
+const rightArrowReview = document.querySelector('.right_button_review');
+
+var sectionIndexReview = 0;
+
+leftArrowReview.addEventListener('click', function(){
+  sectionIndexReview = (sectionIndexReview > 0)? sectionIndexReview - 1 : 0;
+  slider_Review.style.transform ='translate(' + (sectionIndexReview) * -33.33 + '%)';
+})
+
+rightArrowReview.addEventListener('click', function(){
+  sectionIndexReview = (sectionIndexReview < 2)? sectionIndexReview + 1 : 2;
+  slider_Review.style.transform ='translate(' + (sectionIndexReview) * -33.33 + '%)';
+})
+
+//review_section_slider_ends_here

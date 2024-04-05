@@ -4,31 +4,31 @@ const slides = document.querySelector('.slides');
 const slideWidth = document.querySelector('.slide').offsetWidth;
 const dots = document.querySelectorAll('.dot');
 
-let currentIndex = 0;
+let currentIndexUpd = 0;
 const totalSlides = slides.children.length;
 
 prevBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  currentIndexUpd = (currentIndexUpd - 1 + totalSlides) % totalSlides;
   moveSlider();
   updateColorsPrev();
 });
 
 nextBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % totalSlides;
+  currentIndexUpd = (currentIndexUpd + 1) % totalSlides;
   moveSlider();
   updateColorsNext()
 });
 
 dots.forEach((dot, index) => {
   dot.addEventListener('click', () => {
-    currentIndex = index;
+    currentIndexUpd = index;
     moveSlider();
   });
 });
 
 function moveSlider() {
   slides.style.transition = 'transform 0.5s ease';
-  slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  slides.style.transform = `translateX(-${currentIndexUpd * slideWidth}px)`;
   updateDots();
 }
 
@@ -82,7 +82,7 @@ function updateColorsNext(){
 
 function updateDots() {
   dots.forEach((dot, index) => {
-    if (index === currentIndex) {
+    if (index === currentIndexUpd) {
       dot.classList.add('active_slider');
     } else {
       dot.classList.remove('active_slider');

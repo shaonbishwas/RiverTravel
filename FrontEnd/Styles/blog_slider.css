@@ -1,0 +1,42 @@
+/* .blog_slides {
+    display: flex;
+    transition: transform 0.5s ease;
+  } */
+
+  /* .blog_slide {
+    flex: 0 0 100%; */
+    /* height: 200px; */
+    /* height: 50vh; */
+    /* height: auto;
+    min-height: 100vh; */
+    /* min-height: 100vh; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+  } */
+
+  /* .blogs_text { */
+    /* it is working as the sliders functionalities */
+    /* display: flex;
+    transition: transform 0.5s ease;
+  } */
+  /* .blog_blog_slider { */
+    /* it is working as the slider functionalities */
+    
+    /* position: relative;
+    overflow: hidden;
+  } */
+  .blog_dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .active_blog_slider {
+    background-color: rgba(0, 0, 0, 0.8);
+  }

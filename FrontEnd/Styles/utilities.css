@@ -51,7 +51,10 @@
 .cus_pb_5{
     padding-bottom: 25px !important;
 }
-
+.cus_container{
+    width: 50%;
+    margin: auto;
+}
 
 
 
